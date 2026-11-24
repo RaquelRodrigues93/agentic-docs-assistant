@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Secrets and local state
+.env
+*.sqlite
+*.sqlite3
+*.db
+data/
+
+# Terraform
+infra/**/.terraform/
+infra/**/*.tfstate
+infra/**/*.tfstate.*
+infra/**/*.tfvars
+!infra/**/*.tfvars.example
+infra/**/.terraform.tfstate.lock.info
+
+# Evals: keep latest report, ignore scratch runs
+evals/reports/runs/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
